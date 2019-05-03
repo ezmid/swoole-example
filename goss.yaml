@@ -1,0 +1,20 @@
+file:
+  /var/www/app/index.php:
+    exists: true
+    filetype: file
+    contains: []
+package:
+  php7:
+    installed: true
+  php7-json:
+    installed: true
+  php7-pecl-swoole:
+    installed: true
+port:
+  tcp:9501:
+    listening: true
+    ip:
+    - 0.0.0.0
+process:
+  php:
+    running: true
